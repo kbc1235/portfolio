@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 /*font-family: 'Nanum Myeongjo', serif;*/
-
+html{scroll-behavior: smooth;}
 body{
 	font-family: 'Nanum Gothic', sans-serif;
 	font-size: 0.75em;
@@ -11,6 +11,13 @@ svg{
 }
 
 /* ---------------------------------------- */
+#wrap{
+	background: black;
+	width:100%;
+	height: 100%;
+	overflow:auto;
+	position:fixed;
+}
 header{
 	position: fixed;
 	width: 100%;
@@ -73,5 +80,8 @@ header a{
 	opacity: 1;
 }
 .content-wrap{
-	background-color: #000;
+	height: 3000px;
+}
+.slide{
+	margin: 30px auto;
 }

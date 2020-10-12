@@ -12,10 +12,16 @@
 
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/common.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 	<link rel="stylesheet" type="text/css" href="./css/portfolio.css">
 
 	<script src="./js/jquery-3.5.1.min.js"></script>
+	<script src="./lib/smootwheel/smootwheel.min.js"></script>
+	<script src="./lib/smootwheel/jquery.smoothwheel.js"></script>
+	
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="./js/portfolio.js"></script>
+
 
 	<style>
 		.header-nav > li:nth-child(1) a{
@@ -36,29 +42,41 @@
 		}
 	</style>
 	<script>
-	</script>
+        $(document).ready(function(){
+			$("#wrap").smoothWheel()
+        });
+    </script>
 </head>
 <body>
-	<div id="wrap">
-		<header>
-			<div class="header-wrap">
-				<div class="header-logo">
-					<a href="#">HYEMIN</a>
-				</div>
-				<nav class="header-nav">
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Ability</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</nav>
+<div id="wrap">
+	<header>
+		<div class="header-wrap">
+			<div class="header-logo">
+				<a href="#">HYEMIN</a>
 			</div>
-		</header>
-		<div class="content-wrap">
-			<div class="slide">
-				<img src="./img/main_img01.jpg" alt="슬라이드 이미지 입니다">
-			</div>
+			<nav class="header-nav">
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Ability</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</nav>
 		</div>
-		<footer></footer>
+	</header>
+	<div class="content-wrap">
+		<div class="slide" data-aos="fade-right">
+			<img src="./img/main_img01.jpg" alt="슬라이드 이미지 입니다">
+		</div>
+		<div class="slide2">
+			<img src="./img/main_img01.jpg" alt="슬라이드 이미지 입니다">
+		</div>
+		<div class="slide" data-aos="fade-right">
+			<img src="./img/main_img01.jpg" alt="슬라이드 이미지 입니다">
+		</div>
+		<div class="slide" data-aos="fade-right">
+			<img src="./img/main_img01.jpg" alt="슬라이드 이미지 입니다">
+		</div>
 	</div>
+	<footer></footer>
+</div>
 </body>
 </html>
