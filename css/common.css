@@ -10,7 +10,32 @@ svg{
 	vertical-align: middle;
 }
 
-#wrap{
-	background: red;
-	height: 300px;
+/* ---------------------------------------- */
+header{
+	position: fixed;
+	width: 100%;
+}
+header a{
+	color: #fff;
+}
+.header-wrap{
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+	line-height: 80px;
+	background-color: #999;
+}
+.header-logo{
+	float: left;
+}
+.header-nav{
+	float: right;
+	overflow: hidden;
+}
+.header-nav > li{
+	float: left;
+}
+.content-wrap{
+	background-color: #000;
+	height: 800px;
 }
